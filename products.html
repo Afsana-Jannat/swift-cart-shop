@@ -12,7 +12,12 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <!-- style -->
  <link rel="stylesheet" href="style.css">
-
+<style>
+  .active{
+    background: #6D5BF7;
+    color: white;
+  }
+</style>
 </head>
 <body>
     <header>
@@ -52,13 +57,25 @@
     <h2 class="text-5xl mt-6 text-center font-bold text-gray-800 leading-tight">Why Choose us</h2>
     <nav id="category-container" class="flex py-5 justify-center gap-5">
 <div>
-    <button onclick="loadProducts()" class="btn btn-sm rounded-xl bg-[#6D5BF7] text-white">All</button>
+    <button id="btn-all" onclick="loadProducts()" class="btn btn-sm rounded-xl">All</button>
 </div>
     </nav>
  </section>
 
  <!-- product section -->
  <section class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto w-11/12" id="product-container"></section>
+ 
+ <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal-container"></div>
+     
+    </div>
+  </div>
+</dialog>
+
+
  <!-- footer section -->
     <section>
       <footer class="footer mt-8 sm:footer-horizontal bg-gray-700 text-white p-10">
