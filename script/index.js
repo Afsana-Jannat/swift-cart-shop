@@ -81,9 +81,8 @@ const displayProductDetails = (product) => {
     <p><span></span>${product.description}</p >
     <p><span>Price:  </span>${product.price}</p >
     <p><span>Rating:  </span>${product.rating.rate}</p >
-          <div class="badge badge-outline btn btn-xs text-white bg-[#6450f8] "><span><i class="fa-solid fa-cart-plus"></i></span>Add</div>
+        <div class="badge badge-outline btn btn-xs text-white bg-[#6450f8] "><span><i class="fa-solid fa-cart-plus"></i></span>Add</div>
 
-    <></>
         <div class="card-actions justify-end">
             <div class="modal-action">
                 <form method="dialog">
@@ -131,10 +130,7 @@ const displayProducts = (products) => {
       <div class="badge badge-outline btn btn-xs text-white bg-[#6450f8] "><span><i class="fa-solid fa-cart-plus"></i></span>Add</div>
     </div>
   </div>
- 
-</>
-
-
+  </div>
     `;
 
         productContainer.append(productCard)
